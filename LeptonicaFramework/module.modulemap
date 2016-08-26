@@ -1,0 +1,6 @@
+framework module Leptonica {
+    umbrella header "Leptonica.h"
+
+    export *
+    module * { export * }
+}
