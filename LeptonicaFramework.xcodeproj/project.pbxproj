@@ -113,7 +113,6 @@
 		64FD64731D70E5A70083AFCB /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63A61D70E5A60083AFCB /* list.c */; };
 		64FD64741D70E5A70083AFCB /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FD63A71D70E5A60083AFCB /* list.h */; };
 		64FD64751D70E5A70083AFCB /* maze.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63A81D70E5A60083AFCB /* maze.c */; };
-		64FD64761D70E5A70083AFCB /* module.modulemap~ in Resources */ = {isa = PBXBuildFile; fileRef = 64FD63AA1D70E5A60083AFCB /* module.modulemap~ */; };
 		64FD64771D70E5A70083AFCB /* morph.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63AB1D70E5A60083AFCB /* morph.c */; };
 		64FD64781D70E5A70083AFCB /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FD63AC1D70E5A60083AFCB /* morph.h */; };
 		64FD64791D70E5A70083AFCB /* morphapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63AD1D70E5A60083AFCB /* morphapp.c */; };
@@ -322,8 +321,6 @@
 		64FD63A61D70E5A60083AFCB /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = list.c; path = LeptonicaFramework/list.c; sourceTree = SOURCE_ROOT; };
 		64FD63A71D70E5A60083AFCB /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = list.h; path = LeptonicaFramework/list.h; sourceTree = SOURCE_ROOT; };
 		64FD63A81D70E5A60083AFCB /* maze.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = maze.c; path = LeptonicaFramework/maze.c; sourceTree = SOURCE_ROOT; };
-		64FD63A91D70E5A60083AFCB /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = LeptonicaFramework/module.modulemap; sourceTree = SOURCE_ROOT; };
-		64FD63AA1D70E5A60083AFCB /* module.modulemap~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "module.modulemap~"; path = "LeptonicaFramework/module.modulemap~"; sourceTree = SOURCE_ROOT; };
 		64FD63AB1D70E5A60083AFCB /* morph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = morph.c; path = LeptonicaFramework/morph.c; sourceTree = SOURCE_ROOT; };
 		64FD63AC1D70E5A60083AFCB /* morph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = morph.h; path = LeptonicaFramework/morph.h; sourceTree = SOURCE_ROOT; };
 		64FD63AD1D70E5A60083AFCB /* morphapp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = morphapp.c; path = LeptonicaFramework/morphapp.c; sourceTree = SOURCE_ROOT; };
@@ -561,8 +558,6 @@
 				64FD63A61D70E5A60083AFCB /* list.c */,
 				64FD63A71D70E5A60083AFCB /* list.h */,
 				64FD63A81D70E5A60083AFCB /* maze.c */,
-				64FD63A91D70E5A60083AFCB /* module.modulemap */,
-				64FD63AA1D70E5A60083AFCB /* module.modulemap~ */,
 				64FD63AB1D70E5A60083AFCB /* morph.c */,
 				64FD63AC1D70E5A60083AFCB /* morph.h */,
 				64FD63AD1D70E5A60083AFCB /* morphapp.c */,
@@ -774,7 +769,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64FD64651D70E5A70083AFCB /* Info.plist in Resources */,
-				64FD64761D70E5A70083AFCB /* module.modulemap~ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
