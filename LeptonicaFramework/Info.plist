@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2016 Adam Jensen. All rights reserved.</string>
+	<string>Created in 2016 by Adam Jensen. See LICENSE file for details.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>
