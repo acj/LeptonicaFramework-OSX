@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: LeptonicaFramework.xcodeproj
+xcode_scheme: LeptonicaFramework
+osx_image: xcode7.3
