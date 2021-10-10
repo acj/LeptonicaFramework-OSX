@@ -2,6 +2,8 @@ This is a macOS framework "wrapper" for the Leptonica library.
 
 ## Getting Started
 
+1. Install [Homebrew](https://brew.sh/)
+1. Run `brew install freetype libpng libjpeg libtiff`
 1. Clone this repository.
  * Drag `LeptonicaFramework.xcodeproj` to your project.
  * In your project settings under Build Phases, add `LeptonicaFramework.framework` under "Target Dependencies" and "Link Binary with Libraries".
@@ -9,10 +11,6 @@ This is a macOS framework "wrapper" for the Leptonica library.
  * Build and enjoy.
 
 If you improve this project, please send me a pull request.
-
-## Notes
-
-To simplify Leptonica's dependency on various graphics libraries (libtiff, libpng, freetype, etc) and make this framework self-contained, I include the [UnixImageIO and FreeType](http://www.kyngchaos.com/software:frameworks) frameworks from KyngChaos.
 
 ## Credit
 

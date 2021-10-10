@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64FD63011D70B4800083AFCB /* FreeType.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FD62FF1D70B4800083AFCB /* FreeType.framework */; };
-		64FD63021D70B4800083AFCB /* UnixImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FD63001D70B4800083AFCB /* UnixImageIO.framework */; };
+		645C1D8127126BE300F61CBC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645C1D8027126BE300F61CBC /* ImageIO.framework */; };
 		64FD640E1D70E5A70083AFCB /* adaptmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63411D70E5A60083AFCB /* adaptmap.c */; };
 		64FD640F1D70E5A70083AFCB /* affine.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63421D70E5A60083AFCB /* affine.c */; };
 		64FD64101D70E5A70083AFCB /* affinecompose.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63431D70E5A60083AFCB /* affinecompose.c */; };
@@ -96,7 +95,6 @@
 		64FD64621D70E5A70083AFCB /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63951D70E5A60083AFCB /* heap.c */; };
 		64FD64631D70E5A70083AFCB /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FD63961D70E5A60083AFCB /* heap.h */; };
 		64FD64641D70E5A70083AFCB /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FD63971D70E5A60083AFCB /* imageio.h */; };
-		64FD64651D70E5A70083AFCB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64FD63981D70E5A60083AFCB /* Info.plist */; };
 		64FD64661D70E5A70083AFCB /* jbclass.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD63991D70E5A60083AFCB /* jbclass.c */; };
 		64FD64671D70E5A70083AFCB /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FD639A1D70E5A60083AFCB /* jbclass.h */; };
 		64FD64681D70E5A70083AFCB /* jp2kheader.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD639B1D70E5A60083AFCB /* jp2kheader.c */; };
@@ -213,10 +211,22 @@
 		64FD64D91D70E5A70083AFCB /* zlibmemstub.c in Sources */ = {isa = PBXBuildFile; fileRef = 64FD640D1D70E5A70083AFCB /* zlibmemstub.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		645C1D772712667700F61CBC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		645C1D8027126BE300F61CBC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		64FD61561D70AD800083AFCB /* LeptonicaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeptonicaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64FD62FF1D70B4800083AFCB /* FreeType.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreeType.framework; path = Libraries/FreeType.framework; sourceTree = "<group>"; };
-		64FD63001D70B4800083AFCB /* UnixImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnixImageIO.framework; path = Libraries/UnixImageIO.framework; sourceTree = "<group>"; };
 		64FD63411D70E5A60083AFCB /* adaptmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = adaptmap.c; path = LeptonicaFramework/adaptmap.c; sourceTree = SOURCE_ROOT; };
 		64FD63421D70E5A60083AFCB /* affine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = affine.c; path = LeptonicaFramework/affine.c; sourceTree = SOURCE_ROOT; };
 		64FD63431D70E5A60083AFCB /* affinecompose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = affinecompose.c; path = LeptonicaFramework/affinecompose.c; sourceTree = SOURCE_ROOT; };
@@ -426,20 +436,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FD63021D70B4800083AFCB /* UnixImageIO.framework in Frameworks */,
-				64FD63011D70B4800083AFCB /* FreeType.framework in Frameworks */,
+				645C1D8127126BE300F61CBC /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		645C1D742712667700F61CBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				645C1D8027126BE300F61CBC /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64FD614C1D70AD800083AFCB = {
 			isa = PBXGroup;
 			children = (
-				64FD61581D70AD800083AFCB /* Leptonica */,
-				64FD62FE1D70B46C0083AFCB /* Libraries */,
+				64FD61581D70AD800083AFCB /* LeptonicaFramework */,
 				64FD61571D70AD800083AFCB /* Products */,
+				645C1D742712667700F61CBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -451,7 +468,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		64FD61581D70AD800083AFCB /* Leptonica */ = {
+		64FD61581D70AD800083AFCB /* LeptonicaFramework */ = {
 			isa = PBXGroup;
 			children = (
 				64FD63411D70E5A60083AFCB /* adaptmap.c */,
@@ -657,16 +674,7 @@
 				64FD640C1D70E5A70083AFCB /* zlibmem.c */,
 				64FD640D1D70E5A70083AFCB /* zlibmemstub.c */,
 			);
-			path = Leptonica;
-			sourceTree = "<group>";
-		};
-		64FD62FE1D70B46C0083AFCB /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				64FD62FF1D70B4800083AFCB /* FreeType.framework */,
-				64FD63001D70B4800083AFCB /* UnixImageIO.framework */,
-			);
-			name = Libraries;
+			path = LeptonicaFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -722,6 +730,7 @@
 				64FD61521D70AD800083AFCB /* Frameworks */,
 				64FD61531D70AD800083AFCB /* Headers */,
 				64FD61541D70AD800083AFCB /* Resources */,
+				645C1D772712667700F61CBC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -738,7 +747,7 @@
 		64FD614D1D70AD800083AFCB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Adam Jensen";
 				TargetAttributes = {
 					64FD61551D70AD800083AFCB = {
@@ -748,10 +757,11 @@
 			};
 			buildConfigurationList = 64FD61501D70AD800083AFCB /* Build configuration list for PBXProject "LeptonicaFramework" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 64FD614C1D70AD800083AFCB;
 			productRefGroup = 64FD61571D70AD800083AFCB /* Products */;
@@ -768,7 +778,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64FD64651D70E5A70083AFCB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -958,18 +967,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1005,18 +1026,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1044,27 +1077,37 @@
 		64FD615F1D70AD800083AFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = x86_64;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries/UnixImageIO.framework/Headers",
-					"$(PROJECT_DIR)/Libraries/FreeType.framework/Headers",
+					"/usr/local/opt/freetype/include/**",
+					"/usr/local/opt/libtiff/include/**",
+					"/usr/local/opt/libpng/include/**",
+					"/usr/local/opt/jpeg/include/**",
 				);
 				INFOPLIST_FILE = LeptonicaFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
-				MODULEMAP_FILE = LeptonicaFramework/module.modulemap;
-				OTHER_LDFLAGS = "-lz";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/opt/freetype/lib/**",
+					"/usr/local/opt/libtiff/lib/**",
+					"/usr/local/opt/libpng/lib/**",
+					"/usr/local/opt/jpeg/lib/**",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ltiff",
+					"-lpng",
+					"-ljpeg",
+					"-lfreetype",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.acj.LeptonicaFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1074,27 +1117,37 @@
 		64FD61601D70AD800083AFCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = x86_64;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries/UnixImageIO.framework/Headers",
-					"$(PROJECT_DIR)/Libraries/FreeType.framework/Headers",
+					"/usr/local/opt/freetype/include/**",
+					"/usr/local/opt/libtiff/include/**",
+					"/usr/local/opt/libpng/include/**",
+					"/usr/local/opt/jpeg/include/**",
 				);
 				INFOPLIST_FILE = LeptonicaFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
-				MODULEMAP_FILE = LeptonicaFramework/module.modulemap;
-				OTHER_LDFLAGS = "-lz";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/opt/freetype/lib/**",
+					"/usr/local/opt/libtiff/lib/**",
+					"/usr/local/opt/libpng/lib/**",
+					"/usr/local/opt/jpeg/lib/**",
+				);
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-ltiff",
+					"-lpng",
+					"-ljpeg",
+					"-lfreetype",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.acj.LeptonicaFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
